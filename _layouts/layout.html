@@ -13,6 +13,9 @@
   <meta name="description" content="{{ site.description }}" />
 
   <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+  {% if site.feedburner %}
+  <link href="http://feeds.feedburner.com/{{ site.feedburner.id }}" rel="alternate" title="{{ site.title }}" type="application/atom+xml" />
+  {% endif %}
 
   <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
@@ -26,7 +29,7 @@
 <body>
   <section class="sidebar">
     <a href="/">
-      <img src="{{ site.gravatar_url }}" height="75" width="75" class="avatar" />
+      <div class="avatar"></div>
     </a>
 
     <section class="name">
@@ -37,12 +40,12 @@
     </section>
 
     <section class="meta">
-      <a href="https://github.com/{{ site.github }}" target="_blank"><img src="/images/github.png" /></a>
-      <a href="https://twitter.com/{{ site.twitter }}" target="_blank"><img src="/images/twitter.png"></a>
-      <a href="https://facebook.com/{{ site.facebook }}" target="_blank"><img src="/images/facebook.png"></a>
-      <a href="https://plus.google.com/{{ site.gplus }}/posts" target="_blank"><img src="/images/google_plus.png"></a>
-      <a href="mailto:{{ site.email }}" target="_blank"><img src="/images/email.png"></a>
-      <a href="/atom.xml"><img src="/images/rss.png" /></a>
+      <a href="https://github.com/{{ site.github }}" target="_blank"><img alt="GitHub" title="GitHub" src="/images/github.png" /></a>
+      <a href="https://twitter.com/{{ site.twitter }}" target="_blank"><img alt="Twitter" title="Twitter" src="/images/twitter.png"></a>
+      <a href="https://facebook.com/{{ site.facebook }}" target="_blank"><img alt="Facebook" title="Facebook" src="/images/facebook.png"></a>
+      <a href="https://plus.google.com/{{ site.gplus }}/posts" target="_blank"><img alt="Google Plus" title="Google Plus" src="/images/google_plus.png"></a>
+      <a href="mailto:{{ site.email }}" target="_blank"><img alt="Email" title="Email" src="/images/email.png"></a>
+      <a href="/atom.xml"><img alt="Feed" title="Feed" src="/images/rss.png" /></a>
     </section>
 
     <section class="sections">
