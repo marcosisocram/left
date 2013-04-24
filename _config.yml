@@ -2,7 +2,7 @@ markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:day/:title/
 auto: false
-exclude: ['Rakefile', 'readme.markdown', 'Gemfile', 'Gemfile.lock']
+exclude: ['Rakefile', 'readme.markdown', 'Gemfile', 'Gemfile.lock', 'cache.appcache']
 rdiscount:
   extensions: [smart]
 
