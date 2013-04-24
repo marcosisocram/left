@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR" manifest="cache.appcache"> <!--  -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt-BR" > <!-- manifest="cache.appcache" -->
 <head>  
   <title>
     {% if page.title %}
       {{ page.title }} &ndash;
     {% endif %}
     {{ site.name }}
-  </title>
-  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  </title>  
   <meta name="author" content="{{ site.name }}" />
   <meta name="description" content="{{ site.description }}" />
 
@@ -39,12 +38,36 @@
     </section>
 
     <section class="meta">
-      <a href="https://github.com/{{ site.github }}" target="_blank"><img alt="GitHub" title="GitHub" src="/images/github.png" /></a>
-      <a href="https://twitter.com/{{ site.twitter }}" target="_blank"><img alt="Twitter" title="Twitter" src="/images/twitter.png"></a>
-      <a href="https://facebook.com/{{ site.facebook }}" target="_blank"><img alt="Facebook" title="Facebook" src="/images/facebook.png"></a>
-      <a href="https://plus.google.com/{{ site.gplus }}/posts" target="_blank"><img alt="Google Plus" title="Google Plus" src="/images/google_plus.png"></a>
-      <a href="mailto:{{ site.email }}" target="_blank"><img alt="Email" title="Email" src="/images/email.png"></a>
-      <a href="/atom.xml"><img alt="Feed" title="Feed" src="/images/rss.png" /></a>
+      <a href="https://github.com/{{ site.github }}" target="_blank">
+        <span class="clipwrapper" >
+          <img class="clip glyphicons_github" alt="GitHub" title="GitHub" src="/images/sprites.png"/>
+        </span>
+      </a>
+      <a href="https://twitter.com/{{ site.twitter }}" target="_blank">
+        <span class="clipwrapper" >
+          <img class="clip glyphicons_twitter odd" alt="Twitter" title="Twitter" src="/images/sprites.png"/>
+        </span>
+      </a>
+      <a href="https://facebook.com/{{ site.facebook }}" target="_blank">
+        <span class="clipwrapper" >
+          <img alt="Facebook" title="Facebook" class="clip glyphicons_facebook" src="/images/sprites.png"/>
+         </span>
+      </a>
+      <a href="https://plus.google.com/{{ site.gplus }}/posts" target="_blank">
+        <span class="clipwrapper" >
+          <img alt="Google Plus" title="Google Plus" class="clip glyphicons_google_plus odd" src="/images/sprites.png"/>      
+        </span>
+      </a>
+      <a href="mailto:{{ site.email }}" target="_blank">
+        <span class="clipwrapper" >
+          <img alt="Email" title="Email" class="clip glyphicons_e-mail" src="/images/sprites.png"/>
+        </span>
+      </a>
+      <a href="/atom.xml" target="_blank">
+        <span class="clipwrapper" >
+          <img alt="Feed" title="Feed" class="clip glyphicons_rss odd" src="/images/sprites.png" />
+        </span>
+      </a>
     </section>
 
     <section class="sections">

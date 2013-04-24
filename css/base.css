@@ -3,9 +3,45 @@ body {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   margin: 0;
   -webkit-font-smoothing: antialiased; }
-
 a {
   color: #227ce8; }
+.clip{
+  position: absolute;
+  top: 0; left: 0; }
+.clipwrapper { 
+  position: relative;
+  height: 48px;
+  width: 48px; }
+.glyphicons_rss{
+  clip: rect(0px, 24px, 24px, 0px);
+  top: 55px;
+  left: 25px; }
+.glyphicons_e-mail{
+  clip:rect(0, 49px, 24px, 25px);
+  left: -25px;
+  top: 55px;}
+.glyphicons_twitter{
+  clip:rect(0, 75px, 24px, 49px);
+  left: -25px;}
+.glyphicons_facebook{
+  clip:rect(0px, 99px, 24px, 75px);
+  left: -75px;
+  top: 28px;}
+.glyphicons_github{
+  clip:rect(0px, 124px, 24px, 100px);
+  left: -100px;}
+.glyphicons_google_plus{
+  clip:rect(0px, 149px, 24px, 125px);
+  left: -100px;
+  top: 28px;}
+.glyphicons_tags{  
+  clip:rect(0px,24px,24px,0px);}
+.glyphicons_comments{
+  clip:rect(0px,24px,24px,0px);}
+.glyphicons_share_alt{
+  clip:rect(0px,24px,24px,0px);}
+
+
 
 .sidebar {
   position: fixed;
@@ -15,11 +51,11 @@ a {
   font-family: Helvetica, sans-serif; }
   .sidebar a {
     text-decoration: none; }
-  .sidebar img {
+  /*.sidebar img {
     padding: 0 3px;
     border: 0;
     height: 24px;
-    width: 24px; }
+    width: 24px; }*/
   .sidebar .avatar {    
     width: 75px;
     height: 75px;
@@ -43,13 +79,21 @@ a {
       font-weight: bold;
       letter-spacing: 1px;
       color: black; }
+    .sidebar .meta {
+      position: relative;
+      margin-bottom: 0px;
+      width: 65px;
+      height: 80px;}
   .sidebar .meta a {
     margin-left: 0px;
     color: black; }
     .sidebar .meta a:hover {
-      color: #227ce8; }
-  .sidebar .sections {
-    margin: 15px 0 0 0; }
+      color: #227ce8; }  
+    .sidebar .meta a span .odd{
+    margin: 0 3px; }
+    .sidebar .sections {
+      position: relative;
+      top: 10px;}    
     .sidebar .sections a {
       padding: 3px 0;
       color: black;
@@ -57,7 +101,7 @@ a {
       font-size: 12px;
       display: block; }
       .sidebar .sections a:hover {
-        color: #227ce8; }
+        color: #227ce8; }        
     .sidebar .sections ul {
       margin: 0;
       padding: 0; }
@@ -70,32 +114,11 @@ a {
   margin-left: 122px;
   margin-right: 20px;
   margin-bottom: 50px; }
-  .content h1 {
+  .content h1, .content h2, .content h3, .content h4{
     color: #333;
     font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
-    font-weight: 400; }
-  .content h1 a {
-    color: #111;
-    text-decoration: none; }
-  .content h2 {
-    color: #333;
-    font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
-    font-weight: 400; }
-  .content h2 a {
-    color: #111;
-    text-decoration: none; }
-  .content h3 {
-    color: #333;
-    font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
-    font-weight: 400; }
-  .content h3 a {
-    color: #111;
-    text-decoration: none; }
-  .content h4 {
-    color: #333;
-    font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
-    font-weight: 400; }
-  .content h4 a {
+    font-weight: 400; }  
+  .content h1 a, .content h2 a, .content h3 a, .content h4 a {
     color: #111;
     text-decoration: none; }
   .content h1 {
