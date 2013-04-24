@@ -1,5 +1,8 @@
 AddType text/cache-manifest appcache
-Content-Type: text/html; charset=UTF-8
+
+<FilesMatch "\.(html|/)$">
+ForceType text/html;charset=utf-8
+</FilesMatch>
 
 #Gzip
 <ifmodule mod_deflate.c>
