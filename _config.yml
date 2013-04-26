@@ -2,7 +2,7 @@ markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:day/:title/
 auto: false
-exclude: ['Rakefile', 'readme.markdown', 'Gemfile', 'Gemfile.lock', 'cache.appcache']
+exclude: ['Rakefile', 'readme.markdown', 'Gemfile', 'Gemfile.lock', 'cache.appcache', 'jekyll.thor']
 rdiscount:
   extensions: [smart]
 
@@ -20,11 +20,8 @@ img_url: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAIAAACzY+a1AAAAB
 # feedburner:
 #   id: feedburnerid
 
-# google_analytics:
-#   account: UA-XXXXX-X
+google_analytics:
+  account: UA-28697404-1
 
-# github:
-#   username: ghusername
-
-# disqus:
-#   id: disqusid
+disqus:
+  id: mrpavllo
