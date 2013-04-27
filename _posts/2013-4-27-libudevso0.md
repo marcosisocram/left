@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Corrigindo o erro do libudev.so.0 com o Chrome no ubuntu 13.04
+description: Com falta do libudev.so.0 no ubuntu 13.04 o Chrome falha na instalação e inicialização.
+type: article
+post: true
+locale: pt_BR
 ---
 Para corrigir o erro tem duas formas, Use uma das duas abaixo.
 
