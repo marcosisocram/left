@@ -7,7 +7,7 @@ extracted from [zachholman.com](http://zachholman.com/), which means it was
 battle-hardened from years of posting serious blog posts about emoji and swear
 words.
 
-![Left](http://cl.ly/image/3S2r1p2C0E2B/content)
+
 
 ## Installation
 
